@@ -36,7 +36,7 @@ class Hop_static_page_caching_display
 			&& substr($_SERVER['HTTP_USER_AGENT'], 0, 19) == 'Static Page Caching'
 		)
 		{
-			ee()->logger->developer('Hop_SPCD: Display content on '.$_SERVER['REQUEST_URI'].' ('.$_SERVER['HTTP_USER_AGENT'].')');
+			// ee()->logger->developer('Hop_SPCD: Display content on '.$_SERVER['REQUEST_URI'].' ('.$_SERVER['HTTP_USER_AGENT'].')');
 			$this->return_data = ee()->TMPL->tagdata;
 		}
 	}
